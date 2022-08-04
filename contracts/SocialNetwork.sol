@@ -1,16 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-contract SocialNetwork{
+contract SocialNetwork {
+    string public name;
 
-   string public name;
+    constructor() {
+        name = "Sunil You Rock";
+    }
 
-  constructor() {
-  	name ="Sunil You Rock";
-  }
-
-  function getName() public view returns(string memory) {
-   return name;
- }
-
+    function getName() public view returns (string memory) {
+        return name;
+    }
 }
